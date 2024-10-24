@@ -10,5 +10,6 @@ Fue creado utilizando HTML, CSS y JavaScript con base en un brief de diseño uti
 - Diseño responsivo
 - Cuadros emergentes
 - Formularios
+- Java Script
 
-https://dramarianasg.github.io/web_project_homeland/
+https://dramarianasg.github.io/web_project_around/
