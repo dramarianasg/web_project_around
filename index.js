@@ -9,8 +9,8 @@ const popupOpened =
   document.querySelector(".popup__opened"); /* Formulario abierto */
 const CloseButton =
   document.querySelector("#close_button"); /* Boton de cierre */
-// const popupName = document.querySelector("#input-name"); /* Nombre */
-// const popupInfo = document.querySelector("#form-info"); /* Acerca de mi */
+const popupName = document.querySelector("#input-name"); /* Nombre */
+const popupInfo = document.querySelector("#form-info"); /* Acerca de mi */
 const popupInputEdit =
   document.querySelector(".popup__input"); /* Informacion en edicion */
 const popupSubmit = document.querySelector(".popup__submit"); /* Boton */
@@ -28,11 +28,11 @@ function closePopup(popup) {
 // Activacion click para apertura de edicion de perfil
 EditButton.addEventListener("click", function () {
   inputName.textContent = popupName.value;
-  inputHobbie.textContent = popupInfo.value;
+  inputInfo.textContent = popupInfo.value;
   openPopup(popup);
 });
 
-// Evento para cerrar el popup de editar perfil
+// Activacion click para cierre de edicion de perfil
 closeButton.addEventListener("click", function () {
   closePopup(popup);
 });
