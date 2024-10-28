@@ -17,8 +17,8 @@ const popupSubmit =
   document.querySelector(".popup__submit"); /* Boton enviar info */
 
 // Apertura del popup
-function openPopup(popup) {
-  popup.classList.add(".popup__opened");
+function openPopup(popupForm) {
+  popupForm.classList.add(".popup__opened");
 }
 
 // Cierre del popup
