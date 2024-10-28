@@ -13,11 +13,12 @@ const popupName = document.querySelector("#input-name"); /* Nombre */
 const popupInfo = document.querySelector("#form-info"); /* Acerca de mi */
 const popupInputEdit =
   document.querySelector(".popup__input"); /* Informacion en edicion */
-const popupSubmit = document.querySelector(".popup__submit"); /* Boton */
+const popupSubmit =
+  document.querySelector(".popup__submit"); /* Boton enviar info */
 
 // Apertura del popup
 function openPopup(popup) {
-  popup.classList.add(".popup_opened");
+  popup.classList.add(".popup__opened");
 }
 
 // Cierre del popup
@@ -33,6 +34,6 @@ EditButton.addEventListener("click", function () {
 });
 
 // Activacion click para cierre de edicion de perfil
-closeButton.addEventListener("click", function () {
+CloseButton.addEventListener("click", function () {
   closePopup(popup);
 });
