@@ -1,17 +1,19 @@
-.page {
-  display: block;
+.body {
   max-width: 1600px;
   width: 100%;
-  margin: 0;
-  background-color: black;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-weight: 400;
   color: #ffffff;
   text-size-adjust: 100%;
 }
 
-.body {
-  margin: auto;
+.page {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-weight: 400;
   color: #ffffff;
