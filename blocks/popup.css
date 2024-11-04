@@ -7,6 +7,8 @@
   margin: auto;
   z-index: 10;
   top: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
 }
 
 /* Detras del formulario */
@@ -37,10 +39,14 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   z-index: 30;
+  font-weight: 900;
 }
 
 .popup__opened {
   display: flex;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: black;
 }
 
 /* Boton de cierre */
@@ -48,18 +54,17 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  top: -30px; /*valor negativo para que quede fuera del contenedor */
-  left: 446px;
+  top: -50px;
+  left: 430px;
   cursor: pointer;
 }
 
 /* Editar el perfil*/
 .popup__form-title {
-  width: 330px;
+  width: 358px;
   max-width: 100%;
-  margin: auto;
-  padding-top: 54px;
-  font-family: "Inter" sans-serif;
+  margin-top: 30px;
+  padding: 0;
   font-weight: 900;
   font-size: 24px;
   line-height: 29px;
@@ -69,39 +74,48 @@
 
 /* Nombre y Acerca de mi vacio*/
 .popup__input {
-  width: calc(100% - 75px);
-  margin: 24px auto;
-  font-family: "Inter" sans-serif;
+  width: 358px;
+  max-width: 100%;
+  margin: 24px 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #c4c4c4;
-  border: 0 0 2px 0 solid #c4c4c4;
+  color: #000000;
+  border: none;
+  border-bottom: 1px solid #c4c4c4;
   padding: 5px;
+  border-radius: 0;
 }
 
-/* Nombre y Acerca de mi en edicion
-.popup__input {
+.popup__input:active {
   color: #000000;
-} */
+}
 
 /* Boton Guardar */
-.popup__submit {
+.submit__button {
   width: 358px;
   max-width: 100%;
   margin: 0 auto;
-  font-family: "Inter", sans-serif;
+  padding: 10px;
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
   text-align: center;
   border-radius: 2px;
-  border: none;
-  background-color: black;
-  color: #ffffff;
+  border: 2px solid #c4c4c4;
+  background-color: white;
+  color: #c4c4c4;
 }
 
-.popup__submit:hover {
+submit:focus-within button {
+  text-align: center;
+  margin: 0 auto; /* Centra el botón horizontalmente */
+  cursor: pointer; /* Añade cursor pointer para indicar que es clickeable */
+  border: none; /* Remueve el borde del botón */
+  background: #000000;
+}
+
+.submit__button:hover {
   background: #000000;
   opacity: 0.8;
   border-radius: 2px;
@@ -109,7 +123,7 @@
 }
 
 @media screen and (max-width: 320px) {
-  .popup__form {
+  .popup__container {
     width: 282px;
   }
 
@@ -121,6 +135,7 @@
   }
 
   .popup__form-title {
+    width: 238px;
     font-size: 18px;
     line-height: 21px;
   }
@@ -130,7 +145,7 @@
     height: 17px;
   }
 
-  .popup__submit {
+  .submit__button {
     width: 238px;
     margin-top: 36px;
     margin-bottom: 25px;

@@ -5,7 +5,7 @@ const profileTitle = document.querySelector(
 const profileAbout = document.querySelector(
   ".content__profile_group-infosubtitle"
 ); //Subtítulo
-const EditButton = document.querySelector("#EditButton"); // Boton edicion en perfil
+const editButton = document.querySelector("#EditButton"); // Boton edicion en perfil
 const popup = document.querySelector(".popup"); /* Area popup */
 const popupOverlay =
   document.querySelector(".popup__overlay"); /* Detras del formulario */
@@ -13,14 +13,14 @@ const popupContainer =
   document.querySelector(".popup__container"); /* Formulario pop up */
 const popupOpened =
   document.querySelector(".popup__opened"); /* Formulario abierto */
-const CloseButton =
+const closeButton =
   document.querySelector("#close_button"); /* Boton de cierre */
 const popupName = document.querySelector("#input-name"); /* Nombre */
-const popupInfo = document.querySelector("#form-info"); /* Acerca de mi */
+const popupInfo = document.querySelector("#input-about"); /* Acerca de mi */
 const popupInputEdit =
   document.querySelector(".popup__input"); /* Informacion en edicion */
-const popupSubmit =
-  document.querySelector(".popup__submit"); /* Boton enviar info */
+const submitButton =
+  document.querySelector(".submit__button"); /* Boton enviar info */
 
 // Apertura del popup
 function openPopup(popupContainer) {
@@ -33,13 +33,19 @@ function closePopup(popupContainer) {
 }
 
 // Activacion click para apertura de edicion de perfil
-EditButton.addEventListener("click", function () {
+editButton.addEventListener("click", function (evt) {
   profileTitle.textContent = popupName.value;
   profileAbout.textContent = popupInfo.value;
   openPopup(popup);
 });
 
 // Activacion click para cierre de edicion de perfil
-CloseButton.addEventListener("click", function () {
+closeButton.addEventListener("click", function () {
   closePopup(popup);
+});
+
+submitButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  profileTitle.textContent = popupName.value;
+  profileAbout.textContent = popupInfo.value;
 });
