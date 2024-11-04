@@ -109,9 +109,9 @@
 
 submit:focus-within button {
   text-align: center;
-  margin: 0 auto; /* Centra el botón horizontalmente */
-  cursor: pointer; /* Añade cursor pointer para indicar que es clickeable */
-  border: none; /* Remueve el borde del botón */
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
   background: #000000;
 }
 
