@@ -112,7 +112,7 @@ submit:focus-within button {
   margin: 0 auto;
   cursor: pointer;
   border: none;
-  background: #000000;
+  background-color: #000000;
 }
 
 .submit__button:hover {

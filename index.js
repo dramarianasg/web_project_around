@@ -34,8 +34,6 @@ function closePopup(popupContainer) {
 
 // Activacion click para apertura de edicion de perfil
 editButton.addEventListener("click", function (evt) {
-  profileTitle.textContent = popupName.value;
-  profileAbout.textContent = popupInfo.value;
   openPopup(popup);
 });
 
@@ -48,4 +46,5 @@ submitButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   profileTitle.textContent = popupName.value;
   profileAbout.textContent = popupInfo.value;
+  closePopup(popup);
 });
