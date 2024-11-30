@@ -50,7 +50,7 @@
 }
 
 /* Boton de cierre */
-.popup__close-button {
+.popup__closebutton {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -60,7 +60,7 @@
 }
 
 /* Editar el perfil*/
-.popup__form-title {
+.popup__formtitle {
   width: 358px;
   max-width: 100%;
   margin-top: 30px;
@@ -92,7 +92,7 @@
 }
 
 /* Boton Guardar */
-.submit__button {
+.popup__submitbutton {
   width: 358px;
   max-width: 100%;
   margin: 0 auto;
@@ -107,7 +107,7 @@
   color: #c4c4c4;
 }
 
-submit:focus-within button {
+popup:focus-within submitbutton {
   text-align: center;
   margin: 0 auto;
   cursor: pointer;
@@ -115,7 +115,7 @@ submit:focus-within button {
   background-color: #000000;
 }
 
-.submit__button:hover {
+.popup__submitbutton:hover {
   background: #000000;
   opacity: 0.8;
   border-radius: 2px;
@@ -127,14 +127,14 @@ submit:focus-within button {
     width: 282px;
   }
 
-  .popup__close-button {
+  .popup__closebutton {
     width: 26px;
     height: 26px;
     top: -35px;
     left: calc(100% - 25px);
   }
 
-  .popup__form-title {
+  .popup__formtitle {
     width: 238px;
     font-size: 18px;
     line-height: 21px;
@@ -145,7 +145,7 @@ submit:focus-within button {
     height: 17px;
   }
 
-  .submit__button {
+  .popup__submitbutton {
     width: 238px;
     margin-top: 36px;
     margin-bottom: 25px;

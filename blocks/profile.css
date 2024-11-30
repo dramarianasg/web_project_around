@@ -25,7 +25,7 @@
   margin: 0;
 }
 
-.content__profile_group-avatar {
+.content__profile_avatar {
   width: 120px;
   height: 120px;
   background-image: url("../images/Jacques_Cousteau.png");
@@ -33,7 +33,7 @@
   border-radius: 50%;
 }
 
-.content__profile_group-info {
+.content__profile_info {
   width: 100%;
   max-width: 500px;
   padding-left: 20px;
@@ -44,7 +44,7 @@
   align-items: center;
   flex-wrap: wrap;
 }
-.content__profile_group-infotitle {
+.content__profile_title {
   max-width: 400px;
   width: 100%;
   margin: 0;
@@ -55,7 +55,7 @@
   line-height: 48px;
 }
 
-.content__profile_group-infoeditbutton {
+.content__profile_editbutton {
   background: url(../images/EditButton.png) no-repeat center;
   background-size: contain;
   margin: 0;
@@ -67,11 +67,11 @@
   margin-left: 10px;
 }
 
-.content__profile_group-infoeditbutton:hover {
+.content__profile_editbutton:hover {
   opacity: 0.6;
 }
 
-.content__profile_group-infosubtitle {
+.content__profile_subtitle {
   max-width: 415px;
   width: 100%;
   font-family: "Inter";
@@ -82,7 +82,7 @@
   margin: 0;
 }
 
-.content__profile_add-button {
+.content__profile_addbutton {
   align-self: center;
   justify-content: flex-end;
   background-color: black;
@@ -92,7 +92,7 @@
   border: 1px solid white;
 }
 
-.content__profile_add-button:hover {
+.content__profile_addbutton:hover {
   opacity: 0.6;
   cursor: pointer;
 }
@@ -113,11 +113,11 @@
     margin: 0;
   }
 
-  .content__profile_group-avatar {
+  .content__profile_avatar {
     margin-bottom: 30px;
   }
 
-  .content__profile_group-info {
+  .content__profile_info {
     width: 282px;
     max-width: 100%;
     padding: 0;
@@ -127,20 +127,20 @@
     justify-content: center;
   }
 
-  .content__profile_group-infotitle {
+  .content__profile_title {
     max-width: 196px;
     width: 100%;
     font-size: 35px;
     line-height: 38px;
   }
 
-  .content__profile_group-infoeditbutton {
+  .content__profile_editbutton {
     width: 18px;
     height: 18px;
     margin-left: 5px;
   }
 
-  .content__profile_group-infosubtitle {
+  .content__profile_subtitle {
     max-width: 282px;
     width: 100%;
     font-size: 14px;
@@ -150,7 +150,7 @@
     text-align: center;
   }
 
-  .content__profile_add-button {
+  .content__profile_addbutton {
     flex-direction: column;
     width: 282px;
     margin-top: 30px;
@@ -173,11 +173,11 @@
     margin: 0;
   }
 
-  .content__profile_group-avatar {
+  .content__profile_avatar {
     margin-bottom: 30px;
   }
 
-  .content__profile_group-info {
+  .content__profile_info {
     width: 282px;
     max-width: 100%;
     padding: 0;
@@ -187,7 +187,7 @@
     justify-content: center;
   }
 
-  .content__profile_group-infotitle {
+  .content__profile_title {
     max-width: 196px;
     width: 100%;
     margin: 0;
@@ -195,13 +195,13 @@
     line-height: 27px;
   }
 
-  .content__profile_group-infoeditbutton {
+  .content__profile_editbutton {
     width: 18px;
     height: 18px;
     margin-left: 5px;
   }
 
-  .content__profile_group-infosubtitle {
+  .content__profile_subtitle {
     max-width: 282px;
     width: 100%;
     font-size: 14px;
@@ -211,7 +211,7 @@
     text-align: center;
   }
 
-  .content__profile_add-button {
+  .content__profile_addbutton {
     flex-direction: column;
     width: 282px;
     margin-top: 30px;

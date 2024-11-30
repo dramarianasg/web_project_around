@@ -1,10 +1,6 @@
 // Variables Edicion Perfil
-const profileTitle = document.querySelector(
-  ".content__profile_group-infotitle"
-); //Título
-const profileAbout = document.querySelector(
-  ".content__profile_group-infosubtitle"
-); //Subtítulo
+const profileTitle = document.querySelector(".content__profile_title"); //Título
+const profileAbout = document.querySelector(".content__profile_subtitle"); //Subtítulo
 const editButton = document.querySelector("#EditButton"); // Boton edicion en perfil
 const popup = document.querySelector(".popup"); /* Area popup */
 const popupOverlay =
@@ -20,7 +16,7 @@ const popupInfo = document.querySelector("#input-about"); /* Acerca de mi */
 const popupInputEdit =
   document.querySelector(".popup__input"); /* Informacion en edicion */
 const submitButton =
-  document.querySelector(".submit__button"); /* Boton enviar info */
+  document.querySelector("#SubmitButton"); /* Boton enviar info */
 
 // Apertura del popup
 function openPopup(popupContainer) {
